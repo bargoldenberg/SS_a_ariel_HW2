@@ -20,8 +20,6 @@ int min(int a, int b){
 
 int isPath(int g[10][10],int i, int j){
 int max= 10000000;
-int first =i;
-int second =j;
 for(int i=0;i<10;i++)
 {
     for(int j=0;j<10;j++)
@@ -36,7 +34,6 @@ for(int k=0;k<10;k++)
     for(int i=0;i<10;i++)
     {
         for(int j=0;j<10;j++){
-                int a = (g[i][k]+g[k][j]);
                 if(g[i][k] != 0 && g[k][j] != 0 && g[i][j]!=0&&g[i][j]>g[i][k]+g[k][j]){
                 g[i][j]=g[i][k]+g[k][j];  
                 }
@@ -62,8 +59,6 @@ for(int i=0;i<10;i++)
 }
 int shortestPath(int g[10][10],int i, int j){
 int max= 10000000;
-int first =i;
-int second =j;
 for(int i=0;i<10;i++)
 {
     for(int j=0;j<10;j++)
@@ -78,7 +73,6 @@ for(int k=0;k<10;k++)
     for(int i=0;i<10;i++)
     {
         for(int j=0;j<10;j++){
-                int a = (g[i][k]+g[k][j]);
                 if(g[i][k] != 0 && g[k][j] != 0 && g[i][j]!=0&&g[i][j]>g[i][k]+g[k][j]){
                 g[i][j]=g[i][k]+g[k][j];  
                 }

@@ -2,7 +2,6 @@
 #include"my_mat.h"
 int main(){
     int g[10][10];
-    int count =0;
     while(1){
         char a;
         scanf("%c",&a);
@@ -10,6 +9,8 @@ int main(){
             break;
         }else if (a=='A'){
             int *n;
+            n++;
+            n--;
             n=MakeMatrix(g);
         }else if(a=='B'){
             int i =0;
